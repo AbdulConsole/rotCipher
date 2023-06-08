@@ -35,7 +35,6 @@ func main() {
     
     ws := NewWord{}
     
-    //ws.rotate(13, "hello")
     ws.rotate(num, entry)
     fmt.Println("Original: ",strings.Join(ws.Entry, ""))
     fmt.Println("Rotated: ",strings.Join(ws.Words, ""))
