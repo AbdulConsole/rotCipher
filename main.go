@@ -42,7 +42,7 @@ func main() {
     fmt.Println("Enter rot number: ")
     fmt.Scanln(&num)
     var entry string
-    fmt.println("Enter your string: ")
+    fmt.Println("Enter your string: ")
     fmt.Scanln(&entry)
     
     ws.rotate(num, entry)
