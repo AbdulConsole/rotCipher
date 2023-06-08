@@ -46,6 +46,6 @@ func main() {
     fmt.Scanln(&entry)
     
     ws.rotate(num, entry)
-    fmt.Println(strings.Join(ws.Entry, ""))
-    fmt.Println(strings.Join(ws.Words, ""))
+    fmt.Println("Original: ",strings.Join(ws.Entry, ""))
+    fmt.Println("Rotated: ",strings.Join(ws.Words, ""))
 }
