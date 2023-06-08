@@ -22,7 +22,8 @@ type NewWord struct {
 
 func (ptr *NewWord)rotate(num int, entry string) {
     for _, v := range entry {
-        enc := (int(v) + num) % 128
+        //enc := (int(v) + num) % 128
+        enc := (int(v) + num) % 50
         
         ptr.Entry = append(ptr.Entry, string(v))
         ptr.Words = append(ptr.Words, string(enc))
