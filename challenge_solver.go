@@ -9,8 +9,10 @@ This Rotation is different from the traditional or usual rot cipher as it uses a
 package main
 
 import (
-    "fmt"
-    "strings"
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
 )
 
 type NewWord struct {
@@ -28,16 +30,19 @@ func (ptr *NewWord)rotate(num int, entry string) {
 }
 
 func main() {
-    var num int
-    fmt.Println("Enter rot number: ")
-    fmt.Scanln(&num)
-    var entry string
-    fmt.println("Enter your string: ")
-    fmt.Scanln(&entry)
-    
-    ws := NewWord{}
-    
-    ws.rotate(num, entry)
-    fmt.Println("Original: ",strings.Join(ws.Entry, ""))
-    fmt.Println("Rotated: ",strings.Join(ws.Words, ""))
+	ws := NewWord{}
+
+	var num int
+	fmt.Println("Enter rot number: ")
+	fmt.Scanln(&num)
+
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Println("Enter your string: ")
+	entry, _ := reader.ReadString('\n')
+
+	entry = strings.TrimSuffix(entry, "\n")
+
+	ws.rotate(num, entry)
+	fmt.Println("Original: ", strings.Join(ws.Entry, ""))
+	fmt.Println("Rotated: ", strings.Join(ws.Words, ""))
 }
