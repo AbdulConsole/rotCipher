@@ -38,13 +38,14 @@ func (ptr *NewWord) rotate(num int, entry string) {
 func main() {
     ws := NewWord{}
 
- var num int
- fmt.Scanln(&num)
- var entry string
- fmt.Scanln(&entry)
+    var num int
+    fmt.Println("Enter rot number: ")
+    fmt.Scanln(&num)
+    var entry string
+    fmt.println("Enter your string: ")
+    fmt.Scanln(&entry)
     
-    //ws.rotate(13, "hello")
-  ws.rotate(num, entry)
-  fmt.Println(strings.Join(ws.Entry, ""))
-  fmt.Println(strings.Join(ws.Words, ""))
+    ws.rotate(num, entry)
+    fmt.Println(strings.Join(ws.Entry, ""))
+    fmt.Println(strings.Join(ws.Words, ""))
 }

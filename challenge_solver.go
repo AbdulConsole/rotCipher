@@ -29,8 +29,10 @@ func (ptr *NewWord)rotate(num int, entry string) {
 
 func main() {
     var num int
+    fmt.Println("Enter rot number: ")
     fmt.Scanln(&num)
     var entry string
+    fmt.println("Enter your string: ")
     fmt.Scanln(&entry)
     
     ws := NewWord{}
