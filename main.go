@@ -5,6 +5,7 @@ Author:: Abdulconsole
 This Rotation Cipher implementation using the traditional or usual 26 alphabet characters. 
 
 Range with: entry >= "a" && entry <= "z"
+to span around only lower case a-z
 
 Formula: (num - num(a)) % 26
 
