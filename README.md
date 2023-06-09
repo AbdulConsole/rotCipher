@@ -5,3 +5,6 @@ Simple Rotation Cipher Implementation
 - ` git clone https://github.com/AbdulConsole/rotCipher`
 - cd rotCipher
 - go run (challenge_solver.go / main.go)
+
+Drop some reviews:
+abdulconsole@gmail.com
