@@ -2,8 +2,9 @@
 
 Author:: Abdulconsole
 
-This Rotation is different from the traditional or usual rot cipher as it uses all the ascii characters, instead of just the 26 alphabet characters.
+This Rotation is different from the traditional or usual rot cipher as it uses all the ascii characters, instead of just the 26 alphabet characters. 
 
+sololearn is my university.
 */
 
 package main
